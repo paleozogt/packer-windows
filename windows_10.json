@@ -135,9 +135,10 @@
   ],
   "post-processors": [
     {
-      "type": "compress",
-      "keep_input_artifact": true,
-      "output": "{{.BuildName}}.zip"
+      "type": "vagrant",
+      "keep_input_artifact": false,
+      "output": "windows_10_pro_{{.Provider}}.box",
+      "vagrantfile_template": "vagrantfile-windows_10.template"
     }
   ],
   "variables": {
