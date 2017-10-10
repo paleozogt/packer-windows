@@ -23,7 +23,7 @@ if not exist "C:\Windows\Temp\sdelete.exe" (
 	cmd /c ""C:\Program Files\7-Zip\7z.exe" x C:\Windows\Temp\SDelete.zip -oC:\Windows\Temp"
 )
 
-msiexec /qb /x C:\Windows\Temp\7z920.msi
+msiexec /qb /x C:\Windows\Temp\7z.msi
 
 net stop wuauserv
 rmdir /S /Q C:\Windows\SoftwareDistribution\Download
