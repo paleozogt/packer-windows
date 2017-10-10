@@ -142,9 +142,9 @@
     }
   ],
   "variables": {
-    "iso_url": "http://care.dlservice.microsoft.com/dl/download/C/3/9/C399EEA8-135D-4207-92C9-6AAB3259F6EF/10240.16384.150709-1700.TH1_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_EN-US.ISO",
+    "iso_url": "http://vision.sensory.local:8081/nexus/service/local/repositories/thirdparty/content/com/microsoft/windows/pro/x64/installer/10.1703/installer-10.1703.iso",
     "iso_checksum_type": "sha1",
-    "iso_checksum": "56ab095075be28a90bc0b510835280975c6bb2ce",
+    "iso_checksum": "ce8005a659e8df7fe9b080352cb1c313c3e9adce",
     "autounattend": "./answer_files/10/Autounattend.xml"
   }
 }
