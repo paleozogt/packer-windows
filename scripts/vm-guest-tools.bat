@@ -32,10 +32,6 @@ goto :done
 
 :virtualbox
 
-:: There needs to be Oracle CA (Certificate Authority) certificates installed in order
-:: to prevent user intervention popups which will undermine a silent installation.
-cmd /c for %%i in (C:\Windows\Temp\virtualbox\cert\vbox*.cer) do C:\Windows\Temp\virtualbox\cert\VBoxCertUtil add-trusted-publisher %%i --root %%i
-
 if exist "C:\Users\vagrant\VBoxGuestAdditions.iso" (
     move /Y C:\Users\vagrant\VBoxGuestAdditions.iso C:\Windows\Temp
 )
@@ -45,6 +41,11 @@ if not exist "C:\Windows\Temp\VBoxGuestAdditions.iso" (
 )
 
 cmd /c ""C:\Program Files\7-Zip\7z.exe" x C:\Windows\Temp\VBoxGuestAdditions.iso -oC:\Windows\Temp\virtualbox"
+
+:: There needs to be Oracle CA (Certificate Authority) certificates installed in order
+:: to prevent user intervention popups which will undermine a silent installation.
+cmd /c for %%i in (C:\Windows\Temp\virtualbox\cert\vbox*.cer) do C:\Windows\Temp\virtualbox\cert\VBoxCertUtil add-trusted-publisher %%i --root %%i
+
 cmd /c C:\Windows\Temp\virtualbox\VBoxWindowsAdditions.exe /S
 rd /S /Q "C:\Windows\Temp\virtualbox"
 goto :done
