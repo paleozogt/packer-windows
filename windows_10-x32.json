@@ -44,7 +44,7 @@
       "winrm_password": "vagrant",
       "winrm_timeout": "2h",
       "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
-      "guest_os_type": "Windows81",
+      "guest_os_type": "Windows10",
       "guest_additions_mode": "disable",
       "disk_size": 184320,
       "floppy_files": [
