@@ -140,7 +140,7 @@
     }
   ],
   "variables": {
-    "iso_url": "http://vision.sensory.local:8081/nexus/service/local/repositories/thirdparty/content/com/microsoft/windows/pro/x64/installer/10.1703/installer-10.1703.iso",
+    "iso_url": "https://src.sensory.com/nexus/service/local/repositories/thirdparty/content/com/microsoft/windows/pro/x64/installer/10.1703/installer-10.1703.iso",
     "iso_checksum_type": "sha1",
     "iso_checksum": "ce8005a659e8df7fe9b080352cb1c313c3e9adce",
     "autounattend": "./answer_files/10/Autounattend.xml"
